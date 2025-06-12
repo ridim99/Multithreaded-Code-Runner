@@ -1,0 +1,66 @@
+{
+  "name": "coderunner",
+  "displayName": "Concurrent CodeRunner",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.96.4"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "work_side_bar",
+          "title": "CodeRunner",
+          "icon": "media/coderunner.svg"
+        }
+      ]
+    },
+    "views": {
+      "work_side_bar": [
+        {
+          "type": "webview",
+          "id": "work_side_bar",
+          "name": "CodeRunner",
+          "icon": "media/coderunner.svg"
+        }
+      ]
+    },
+    "commands": [
+      {
+        "command": "helloWorld",
+        "title": "Hello World"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/jsdom": "^21.1.7",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "@types/node-fetch": "^2.6.12",
+    "@types/vscode": "^1.96.4",
+    "@typescript-eslint/eslint-plugin": "^8.31.1",
+    "@typescript-eslint/parser": "^8.31.1",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.5.2",
+    "eslint": "^9.25.1",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "jsdom": "^26.1.0",
+    "node-fetch": "^2.7.0"
+  }
+}
