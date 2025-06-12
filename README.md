@@ -1,20 +1,43 @@
-# helloworld README
+# Multithreaded Code Runner README
 
-This is the README for your extension "helloworld". After writing up a brief description, we recommend including the following sections.
+This is the README for your extension "Multithreaded code-runner". After writing up a brief description, we recommend including the following sections.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+🧵 Multithreaded Execution
+Executes multiple test files in parallel using multithreading.
+Significantly reduces the total runtime for large sets of testcases.
+Ideal for competitive programming where time efficiency is critical.
 
-For example if there is an image subfolder under your extension project workspace:
+🔗 Codeforces Integration
+Fetches testcases automatically from Codeforces for a given problem.
+Supports both problem URLs and problem codes (e.g., 1900A, 1899C, etc.).
+Eliminates the need for manual copy-pasting of input/output data.
 
-\!\[feature X\]\(images/feature-x.png\)
+🧪 Automated Output Matching
+Runs your solution against all testcases and compares output.
+Clearly highlights pass/fail status for each testcase.
+Shows detailed diff if your output doesn't match the expected output.
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+🖥️ Language and File Support
+Supports compiled languages like C++ and interpreted scripts like Python.
+Accepts standard input/output files (inputX.txt, outputX.txt) and custom formats.
+Supports .exe execution for precompiled solutions.
+
+📦 Clean Architecture
+Modular structure with separate components for:
+Testcase fetching
+Multithreaded execution
+Output comparison
 
 ## Requirements
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+To run this project locally in VS Code:
+
+Place the code file you're working on inside the src/ directory.
+(For example, the default file used is my_file.cpp.)
+
+To enable Codeforces testcase fetching, open src/sidebar.ts and set your installed Python version (e.g., "python3.11" or "python" depending on your system setup).
 
 ## Extension Settings
 
@@ -27,9 +50,6 @@ This extension contributes the following settings:
 * `myExtension.enable`: Enable/disable this extension.
 * `myExtension.thing`: Set to `blah` to do something.
 
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
 
 ## Release Notes
 
