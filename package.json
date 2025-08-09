@@ -1,10 +1,9 @@
 {
   "name": "coderunner",
-  "displayName": "CodeRunner",
+  "displayName": "Multithreaded CodeRunner",
   "publisher": "ridimsahu",
   "description": "A VS Code extension to run code in multiple threads.",
   "version": "0.0.1",
-  "icon": "logo.png",
   "repository": {
     "type": "git",
     "url": "https://dev.azure.com/ridims0746/Multithreaded%20CodeRunner/_git/Multithreaded%20CodeRunner"
