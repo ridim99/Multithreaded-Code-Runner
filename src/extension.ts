@@ -7,7 +7,7 @@ import * as fs from 'fs';
 export function activate(context: vscode.ExtensionContext) 
 {
   console.log('Congratulations, your extension "concurrent coderunner" is now active');
-  const disposable = vscode.commands.registerCommand('helloWorld', () => 
+  const disposable = vscode.commands.registerCommand('RunCode', () => 
   {
 	  vscode.window.showInformationMessage('it started');
 	});
