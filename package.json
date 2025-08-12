@@ -47,7 +47,24 @@
         "command": "RunCode",
         "title": "RunCode"
       }
-    ]
+    ],
+    "configuration": {
+      "title": "Multithreaded coderunner Settings",
+      "properties": {
+        "coderunner.executionPath": 
+        {
+          "type": "string",
+          "default": "",
+          "description": "Path to the executable for running code."
+        },
+        "coderunner.folderpath":
+        {
+          "type": "string",
+          "default": "",
+          "description": "Path to you folder"
+        }
+      }
+    }
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",

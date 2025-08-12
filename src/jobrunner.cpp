@@ -56,7 +56,7 @@ void processJob()
             job = jobQueue.front();
             jobQueue.pop();
         }
-
+ 
         // Read input from job.inputPath
         std::ifstream inputFile(job.inputPath);
         if (!inputFile.is_open()) cout<<"Problem";
