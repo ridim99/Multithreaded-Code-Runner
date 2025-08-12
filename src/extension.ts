@@ -20,7 +20,7 @@ if (!editor)
 }
 const filepath = editor.document.fileName;
 const filename = path.basename(filepath, '.cpp') + '.exe';
-const jobrunnerPath = path.join(context.extensionPath, 'src', 'jobrunner.exe'); // adjust if different
+const jobrunnerPath = context.asAbsolutePath(path.join('bin', 'jobrunner.exe'));
 console.log(filename);
 const jobrunnerproc = cp.spawn(jobrunnerPath, [filename, 'job_queue'], 
   {
